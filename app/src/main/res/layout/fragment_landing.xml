@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nehads.friends.main.landing.LandingFragment"
+    tools:ignore="ContentDescription">
+
+    <include
+        android:id="@+id/include_toolbar"
+        layout="@layout/common_toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin12"
+        android:src="@drawable/ic_settings"
+        android:translationZ="@dimen/margin4"
+        app:layout_constraintBottom_toBottomOf="@id/include_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/include_toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_specials"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginStart="@dimen/margin12"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_marginEnd="@dimen/margin12"
+        android:layout_marginBottom="@dimen/margin20"
+        android:alpha="1.4"
+        android:background="@drawable/round_image"
+        android:scaleType="fitXY"
+        android:src="@drawable/round_green"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include_toolbar" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/iv_specials"
+        app:layout_constraintStart_toStartOf="@id/iv_specials"
+        app:layout_constraintTop_toBottomOf="@id/iv_specials"
+        tools:text="Specials" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_listing"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        tools:itemCount="6"
+        tools:listitem="@layout/item_season" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/grp_specials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tv_name,iv_specials" />
+
+    <include layout="@layout/page_indicator_overlay" />
+</androidx.constraintlayout.widget.ConstraintLayout>

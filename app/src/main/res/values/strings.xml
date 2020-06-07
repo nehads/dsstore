@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">DsStore</string>
+    <string name="api_key">586381a6b8b52a4358fbf87338ebc454</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="history">Your Watch History</string>
+    <string name="profile">Profile</string>
+    <string name="summary">Summary</string>
+    <string name="details">Details</string>
+
+    <string name="internal_server_error">Internal Server Error</string>
+    <string name="error_occured">Error Occurred</string>
+    <string name="could_not_connect_internet">Could not connect to Internet</string>
+    <string name="could_not_connect_server">Could not connect to the Server</string>
+    <string name="logout_confirmation">Are you sure you want to Logout?</string>
+    <string name="option_yes">Yes</string>
+    <string name="option_cancel">Cancel</string>
+    <string name="episode_no">Episode %d</string>
+    <string name="splash_title">F.R.I.E.N.D.S</string>
+    <string name="splash_sub_title">- to light you up…</string>
+    <string name="skip">Skip</string>
+    <string name="logout">Logout</string>
+    <string name="hint_name">Your Name</string>
+    <string name="your_email">Your Email</string>
+    <string name="proceed">PROCEED</string>
+    <string name="hint_password">Enter a Password</string>
+    <string name="lets_go">LET\'S GO</string>
+    <string name="error_required">Required</string>
+    <string name="error_name_short">Name length short</string>
+    <string name="error_invalid_email">Invalid Email</string>
+    <string name="error_pwd_short">Password length short</string>
+    <string name="time_up">Let\'s Watch, It\'s FRIENDS Time!</string>
+    <string name="snooze">Snooze</string>
+    <string name="notification_title">Ds Store</string>
+    <string name="friends_notification_channel_id">friends_channel</string>
+    <string name="remind_me">Remind Me to Watch in 5Mins</string>
+    <string name="friends_notification_channel_name">friends</string>
+    <string name="friends_notification_channel_description">FRIENDS Reminder</string>
+    <string name="you_have_watched">You watched on %s</string>
+</resources>

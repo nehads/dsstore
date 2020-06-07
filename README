@@ -1,0 +1,22 @@
+Ds Store
+- A Simple App that Lists Seasons and Episodes from our favourite show F.R.I.E.N.D.S
+- Also contains a Reminder option that reminds after 5 minutes that you need to watch the show
+- What's New in this?
+  * Learnt how to follow navigation architecture
+  * Learnt to add Repository Pattern in MVVM
+  * While adding the Notification for reminder (using codelab sample), learnt to show data using data binding
+  * Tried to follow a single Activity Pattern with all other screens as Fragments
+  * Also tried to add in enter and exit animation for the fragments used
+- Kotlin
+  * Created a Generic Type so that all error requests go through a common Model
+  * Created Extension functions for loading image data, also adding in error image in case the url doesn't load or is broken
+  * Applied sort on lists
+  * Tried creating a higher order function that sends back item clicked in History Adapter
+- How?
+  * Created a Model(For response from API - Has Success and Error Data) with Generic Type that takes in any Model data and sets as the successData. This model is passed through App Data Manager and Retrofit class and sucessData(the response we need to display) can be easily extracted
+  * Created Extension functions for loading image data, also adding in error image in case the url doesn't load or is broken
+  * Created a plusAssign Extension function that helps in adding disposables easily using operators like '+', used in ViewModels
+  * Created a Higher-Order function that is passed to adapter on initialization which knows which method to send data(Model item) when clicked
+  * Performed easy sort and filter operations on Kotlin list
+
+** Images folder contains screenshots

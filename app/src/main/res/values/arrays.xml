@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_array">
+        <item>Sort by None</item>
+        <item>Vote Count</item>
+        <item>Total Vote Average</item>
+    </string-array>
+
+    <string-array name="season_array">
+        <item>Apply Filter</item>
+        <item>Season1</item>
+        <item>Season2</item>
+        <item>Season3</item>
+        <item>Season4</item>
+        <item>Season5</item>
+        <item>Season6</item>
+        <item>Season7</item>
+        <item>Season8</item>
+        <item>Season9</item>
+        <item>Season10</item>
+    </string-array>
+</resources>

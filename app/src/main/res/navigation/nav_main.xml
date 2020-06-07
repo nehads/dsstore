@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.nehads.friends.main.landing.LandingFragment"
+        android:label="fragment_landing"
+        tools:layout="@layout/fragment_landing">
+
+        <action
+            android:id="@+id/toEpisodesFragment"
+            app:destination="@id/episodesFragment"
+            app:enterAnim="@anim/enter_from_right" />
+        <action
+            android:id="@+id/toProfileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/right_out"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/episodesFragment"
+        android:name="com.nehads.friends.main.episodes.EpisodesFragment"
+        android:label="fragment_product_listing"
+        tools:layout="@layout/fragment_episode_listing">
+
+        <argument
+            android:name="season_no"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.nehads.friends.main.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/toHistoryFragment"
+            app:destination="@id/historyFragment"
+            app:enterAnim="@anim/left_in"
+            app:exitAnim="@anim/left_out"
+            />
+        <action
+            android:id="@+id/toLoginFragment"
+            app:destination="@id/loginFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/landingFragment"
+            app:enterAnim="@anim/card_flip_left_in"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.nehads.friends.main.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/toLandingFragment"
+            app:destination="@id/landingFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.nehads.friends.main.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+</navigation>
